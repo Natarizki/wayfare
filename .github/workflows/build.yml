@@ -8,6 +8,8 @@ on:
 
 jobs:
   build-desktop:
+   permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:
@@ -45,6 +47,8 @@ jobs:
           releaseDraft: true
 
   build-android:
+    permissions:
+       contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
