@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-desktop:
-   permissions:
+    permissions:
       contents: write
     strategy:
       fail-fast: false
@@ -48,7 +48,7 @@ jobs:
 
   build-android:
     permissions:
-       contents: write
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
