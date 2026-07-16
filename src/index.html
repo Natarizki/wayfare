@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wayfare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toolbar">
+    <div id="nav-buttons">
+      <button id="btn-back" title="Back">◀</button>
+      <button id="btn-forward" title="Forward">▶</button>
+      <button id="btn-reload" title="Reload">⟳</button>
+    </div>
+    <input id="address-bar" type="text" placeholder="Type a URL or search..." />
+    <div id="action-buttons">
+      <button id="btn-bookmark" title="Bookmark this page">☆</button>
+      <button id="btn-history" title="History">🕘</button>
+      <button id="btn-bookmarks-panel" title="Bookmarks list">📑</button>
+    </div>
+  </div>
+
+  <div id="tab-bar">
+    <div id="tabs"></div>
+    <button id="btn-new-tab" title="New tab">+</button>
+  </div>
+
+  <div id="content-area"></div>
+
+  <div id="side-panel" class="hidden">
+    <div id="panel-header">
+      <span id="panel-title">Panel</span>
+      <button id="panel-close">✕</button>
+    </div>
+    <div id="panel-body"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
